@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease detection in plants using ML and DS</title>
+    <style>
+        
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .project {
+            background-color: #676567;
+            margin: 1%;
+            padding: 1%;
+            border-radius: 5px;
+        }
+        .item {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+            background-color: #d42121;
+            margin: 1.3%;
+            padding: 1.3%;
+            border-radius: 3px;
+        }
+        .item:hover {
+            background-color: #b0c4de;
+        }
+        .info {
+            display: none;
+            margin: auto;
+            padding: auto;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="project">
+        <h2>Disease detection in plants using ML and DS</h2>
+        <div class="item"><b>Objective or Description</b>
+            <div class="info">The project aims to develop a system that can identify and classify plant diseases based on images of the affected plants. The system will use machine learning algorithms to analyze the images and determine the type of disease present. The project will also involve data science techniques to analyze and interpret the results.</div>
+        </div>
+        <div class="item"><b>Tools, Technologies and concepts</b>
+            <div class="info"><b>Python:</b> The main programming language for the project.<br>
+                <b>OpenCV:</b> For image processing tasks.<br>
+                <b>TensorFlow/PyTorch:</b> For developing the machine learning model.<br>
+                <b>Flask/Django:</b> For developing the web interface.<br>
+                <b>scikit-learn:</b> For model evaluation and optimization.<br>
+                <b>Git:</b> For version control and collaboration.</div>
+        </div>
+        <div class="item"><b>Role of team members</b>
+            <div class="info"><b>Student 1 - Data Collection and Preprocessing:</b> This student will be responsible for collecting images of various plant diseases. They will also preprocess the images (resizing, normalization, etc.) to make them suitable for the machine learning model. They can use Python libraries like OpenCV for image processing.<br>
+
+                <b>Student 2 - Machine Learning Model Development:</b> This student will develop the machine learning model that will analyze the images and classify the plant diseases. They can use Python libraries like TensorFlow or PyTorch for this.<br>
+                
+                <b>Student 3 - User Interface and Integration:</b> This student will develop a user-friendly interface where users can upload images of their plants for disease detection. They will also integrate the machine learning model with the user interface. They can use web development frameworks like Flask or Django for this.<br>
+                
+                <b>Student 4 - Testing and Optimization:</b> This student will be responsible for testing the system to ensure it works correctly. They will also work on optimizing the machine learning model to improve its accuracy. They can use Python libraries like scikit-learn for model evaluation and optimization.</div>
+        </div>
+        <div class="item"><b>Use Cases</b>
+            <div class="info"><b>Image Upload:</b> Users can upload images of their plants through the user interface. The images are then preprocessed and fed into the machine learning model.<br>
+
+                <b>Disease Detection:</b> The machine learning model analyzes the uploaded images and classifies the plant diseases. The results are then displayed to the user.<br>
+                
+                <b>Result Interpretation:</b> The system provides an interpretation of the results, explaining what the detected disease is and providing possible treatments or solutions.<br>
+                
+                <b>History:</b> Users can view a history of their past uploads and the corresponding results</div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.item').click(function() {
+                $(this).find('.info').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

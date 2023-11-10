@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Health Ecosystem</title>
+    <style>
+        
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .project {
+            background-color: #676567;
+            margin: 1%;
+            padding: 1%;
+            border-radius: 5px;
+        }
+        .item {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+            background-color: #d42121;
+            margin: 1.3%;
+            padding: 1.3%;
+            border-radius: 3px;
+        }
+        .item:hover {
+            background-color: #b0c4de;
+        }
+        .info {
+            display: none;
+            margin: auto;
+            padding: auto;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="project">
+        <h2>Digital Health Ecosystem</h2>
+        <div class="item"><b>Objective or Description</b>
+            <div class="info">The project aims to develop a system similar to the Ayushman Bharat Digital Mission (ABDM) by the Indian government. The system will provide a unique Health ID to each user and maintain a digital record of their health data.</div>
+        </div>
+        <div class="item"><b>Tools, Technologies and concepts</b>
+            <div class="info">
+
+                <b>Database System (MySQL or MongoDB):</b> To store the health data of each user.<br>
+                <b>Backend Framework (Node.js or Django):</b> To develop the backend of the application.<br>
+                <b>Frontend Technologies (HTML, CSS, JavaScript):</b> To develop the user interface of the application.<br>
+                <b>Frontend Framework (React or Angular):</b> To develop a dynamic and interactive user interface.<br>
+                <b>Security Technologies (SSL/TLS, bcrypt):</b> To ensure the security of the system.<br>
+                <b>Git:</b> For version control and collaboration.</div>
+        </div>
+        <div class="item"><b>Role of team members</b><br>
+            <div class="info"><b>Student 1 -</b> Database Management: This student will be responsible for setting up and managing the database that will store the health data of each user. They can use a database system like MySQL or MongoDB for this.<br>
+
+               <b>Student 2</b> - Backend Development: This student will develop the backend of the application, which will handle requests and responses, manage data, and generate Health IDs. They can use a backend framework like Node.js or Django for this.<br>
+                
+                <b>Student 3</b> - Frontend Development: This student will develop the user interface of the application. They will use HTML, CSS, and JavaScript for this. They can also use a frontend framework like React or Angular for this.<br>
+                
+                <b>Student 4</b> - Security and Compliance: This student will be responsible for ensuring that the system is secure and complies with all relevant privacy laws and regulations. They can use technologies like SSL/TLS for secure data transmission and bcrypt for secure password storage.</div>
+        </div>
+        <div class="item"><b>Use Cases</b><br>
+            <div class="info"><b>Healthcare Services Personalization:</b> With access to individual health data, you can offer personalized healthcare services. For example, if a user’s data indicates a predisposition to a certain health condition, you could offer personalized preventive care advice or treatments.<br>
+
+                <b>Insurance Premium Optimization:</b> If you’re collaborating with insurance companies, the health data could be used to assess the risk associated with a particular individual and accordingly decide the premium amounts. However, it’s crucial to ensure that you’re not discriminating against individuals based on their health data.<br>
+                
+                <b>Research and Development:</b> The health data could be invaluable for research and development purposes. For example, you could analyze the data to understand the prevalence of certain diseases in different demographics, which could inform the development of new treatments or healthcare services.<br>
+                
+                <b>Resource Allocation:</b> If you’re a healthcare provider, you could use the health data to optimize the allocation of your resources. For example, if the data shows a high demand for a certain healthcare service in a particular area, you could allocate more resources to that service in that area.<br>
+                
+                <b>Partnerships with Healthcare Providers:</b> You could partner with hospitals, clinics, and other healthcare providers, offering them access to your health data (with user consent) to help them improve their services.</div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.item').click(function() {
+                $(this).find('.info').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

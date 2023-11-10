@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer vision + Action recognition + whiteboard application (writing)</title>
+    <style>
+        
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .project {
+            background-color: #676567;
+            margin: 1%;
+            padding: 1%;
+            border-radius: 5px;
+        }
+        .item {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+            background-color: #d42121;
+            margin: 1.3%;
+            padding: 1.3%;
+            border-radius: 3px;
+        }
+        .item:hover {
+            background-color: #b0c4de;
+        }
+        .info {
+            display: none;
+            margin: auto;
+            padding: auto;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="project">
+        <h2>Computer vision + Action recognition + whiteboard application (writing)</h2>
+        <div class="item"><b>Objective or Description</b>
+            <div class="info">The project aims to develop an interactive whiteboard application that uses computer vision and action recognition to detect and interpret writing actions. The application will capture video input, recognize writing actions, and display the corresponding text or drawings on the whiteboard.</div>
+        </div>
+        <div class="item"><b>Tools, Technologies and concepts</b>
+            <div class="info"><b>Python:</b> The main programming language for the project.<br>
+                <b>OpenCV:</b> For video processing tasks.<br>
+                <b>TensorFlow/PyTorch:</b> For developing the action recognition model.<br>
+                <b>Flask/Django:</b> For developing the web interface.<br>
+                <b>scikit-learn:</b> For model evaluation and optimization.<br>
+                <b>Git:</b> For version control and collaboration.</div>
+        </div>
+        <div class="item"><b>Role of team members</b>
+            <div class="info"><b>Student 1 - Data Collection and Preprocessing:</b> This student will be responsible for collecting a dataset of writing actions and preprocessing the data for the action recognition model. They can use Python libraries like OpenCV for video processing.<br>
+
+                <b>Student 2 - Action Recognition Model Development:</b> This student will develop the action recognition model that will analyze the video input and recognize writing actions. They can use Python libraries like TensorFlow or PyTorch for this.<br>
+                
+                <b>Student 3 - User Interface and Integration:</b> This student will develop a user-friendly interface for the interactive whiteboard. They will also integrate the action recognition model with the user interface. They can use web development frameworks like Flask or Django for this.<br>
+                
+                <b>Student 4 - Testing and Optimization:</b> This student will be responsible for testing the application to ensure it works correctly. They will also work on optimizing the action recognition model to improve its performance. They can use Python libraries like scikit-learn for model evaluation and optimization.</div>
+        </div>
+        <div class="item"><b>Use Cases</b>
+            <div class="info"><b>Video Input:</b> Users can provide video input to the application. The video should contain the writing actions that the user wants to display on the interactive whiteboard.<br>
+
+                <b>Action Recognition:</b> The application will analyze the video input and recognize the writing actions. The recognized actions are then interpreted as text or drawings.<br>
+                
+                <b>Interactive Whiteboard:</b> The interpreted text or drawings are displayed on the interactive whiteboard in real-time. Users can see their writing actions being transformed into digital content on the whiteboard.<br>
+                
+                <b>Editing and Customization:</b> Users can edit and customize the content on the whiteboard. They can change the color, size, and other attributes of the text or drawings.<br>
+                
+                <b>Save and Export:</b> Users can save their work on the interactive whiteboard and export it as an image or PDF file.<br>
+                
+                <b></b> Users can view a history of their past sessions on the interactive whiteboard.</div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.item').click(function() {
+                $(this).find('.info').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

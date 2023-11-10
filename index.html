@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<button onclick="openNav()"><i class="fa fa-bars"></i></button>
+
+<style>
+
+body {
+        background-image:url('abstract-digital-grid-black-background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+
+        /* The sidebar menu */
+        .sidebar {
+            height: 100%; /* Full-height: remove this if you want "auto" height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position:absolute; 
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background-color: #1c352d; /* Black */
+            overflow-x: hidden; /* Disable horizontal scroll */
+            transition: 0.3s; /* 0.5 second transition effect to slide in the sidebar */
+            padding-top: 60px; /* Place content 60px from the top */
+        }
+
+        /* The sidebar links */
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .caption {
+            color: white; /* Set the text color to white */
+            text-align: center; /* Center the text */
+            padding: 5px; /* Add some padding */
+            font-size: 3em;
+        }
+
+        .caption1 {
+            color: beige;
+            text-align:center;
+            padding: 5px;
+            font-size: 1.5em; 
+        }
+
+        @media screen and (max-width: 600px) {
+    .caption, .caption1 {
+        font-size: 1.5em; /* This will be the font size for screens smaller than or equal to 600px */
+    }
+}
+.container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  width: 100%; /* Full width of the viewport */
+}
+
+.image-wrapper{
+    position:relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+.button {
+  position: absolute;
+  top: 38.3%;
+  left: 37.6%;
+  transform: translate(-50%, -50%);
+  width:3.0vw;
+  height:3.0vw;
+  background-color: rgb(123, 122, 122);
+  color: transparent;
+  border: none;
+  cursor: pointer;
+  transition:background-color 0.3s ease,color 0.3s ease;
+  border-radius:50%;
+}
+
+.button:hover{
+    background-color:blue;
+    color:rgb(255, 255, 255);
+}
+
+#button1{top:14.2%; left:45.4%;}
+#button2{top:22.3%; left:36.5%;}
+#button3{top:16%;left:53.9%;}
+#button4{top:29.8%;left:60.7%;}
+#button5{top:52%;left:62%;}
+#button6{top:73.7%;left:59%;}
+#button7{top:84.7%;left:51.1%;}
+#button8{top:83.9%;left:41.5%;}
+#button9{top:70%;left:33.5%;}
+#button10{top:46.3%;left:31.7%;}
+#button11{top:24%;left:49.5%;}
+#button12{top:31%;left:55.1%;}
+#button13{top:45%;left:58%;}
+#button14{top:62%;left:57%;}
+#button15{top:72%;left:52.4%;}
+#button16{top:73.6%;left:46%;}
+#button17{top:70%;left:39.6%;}
+#button18{top:55.5%;left:36%;}
+
+</style>
+</head>
+<body>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>
+    <a href="#">Disclamer</a>
+    <a href="#">TimeLine</a>
+    <a href="#">Contact</a>
+    <a href="#">Team</a>
+</div>
+
+
+<div class="container">
+    <div class="image-wrapper">
+  <img src="glacierneuron.png" alt="Your Image">
+  <button id="button1" class="button" onclick="window.location.href='project1.html'">-</button>
+  <button id="button2" class="button" onclick="window.location.href='project2.html'">-</button>
+  <button id="button3" class="button" onclick="window.location.href='project3.html'">-</button>
+  <button id="button4" class="button" onclick="window.location.href='project4.html'">-</button>
+  <button id="button5" class="button" onclick="window.location.href='project5.html'">-</button>
+  <button id="button6" class="button" onclick="window.location.href='project6.html'">-</button>
+  <button id="button7" class="button" onclick="window.location.href='project7.html'">-</button>
+  <button id="button8" class="button" onclick="window.location.href='project8.html'">-</button>
+  <button id="button9" class="button" onclick="window.location.href='project9.html'">-</button>
+  <button id="button10" class="button" onclick="window.location.href='project10.html'">-</button>
+  <button id="button11" class="button" onclick="window.location.href='project11.html'">-</button>
+  <button id="button12" class="button" onclick="window.location.href='project12.html'">-</button>
+  <button id="button13" class="button" onclick="window.location.href='project13.html'">-</button>
+  <button id="button14" class="button" onclick="window.location.href='project14.html'">-</button>
+  <button id="button15" class="button" onclick="window.location.href='project15.html'">-</button>
+  <button id="button16" class="button" onclick="window.location.href='project16.html'">-</button>
+  <button id="button17" class="button" onclick="window.location.href='project17.html'">-</button>
+  <button id="button18" class="button" onclick="window.location.href='project18.html'">-</button>
+  <button id="button19" class="button" onclick="window.location.href='project19.html'">-</button>
+  </div>
+</div>
+
+<div style="font-family: cursive;" class="caption">Inspired by neural network</div>
+<div style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" class="caption1">Click grey buttons in image,every button links to 1 project report.19 projects.2 rejected.9 complete reports.</div>
+
+<script>
+  
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+}
+</script>
+
+</body>
+</html>

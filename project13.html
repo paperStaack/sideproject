@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube video summurizer</title>
+    <style>
+        
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .project {
+            background-color: #676567;
+            margin: 1%;
+            padding: 1%;
+            border-radius: 5px;
+        }
+        .item {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+            background-color: #d42121;
+            margin: 1.3%;
+            padding: 1.3%;
+            border-radius: 3px;
+        }
+        .item:hover {
+            background-color: #b0c4de;
+        }
+        .info {
+            display: none;
+            margin: auto;
+            padding: auto;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="project">
+        <h2>YouTube video summarizer</h2>
+        <div class="item"><b>Objective or Description</b>
+            <div class="info">The YouTube Video Summarizer is a tool designed to provide concise summaries of YouTube videos. It will use Natural Language Processing (NLP) to analyze the video transcripts and generate a summary. The system will also provide a user-friendly interface for users to enter the URL of the YouTube video they want to summarize.</div>
+        </div>
+        <div class="item"><b>Tools, Technologies and concepts</b>
+            <div class="info"><b>YouTube Data API:</b> To extract video transcripts from YouTube videos.<br>
+                <b>Natural Language Processing (NLP):</b> To analyze the video transcripts and generate a summary. Libraries like NLTK or spaCy can be used for this.<br>
+                <b>HTML, CSS, JavaScript:</b> To develop the user interface.<br>
+                <b>Backend Framework (Node.js or Django):</b> To set up the server and manage the requests and responses.<br>
+                <b>Git:</b> For version control and collaboration.</div>
+        </div>
+        <div class="item"><b>Role of team members</b>
+            <div class="info">S<b>student 1 - Video Transcript Extraction:</b> This student will be responsible for developing and implementing the functionality to extract video transcripts from YouTube videos. They will use the YouTube Data API for this.<br>
+
+                <b>Student 2 - Text Summarization:</b> This student will implement the text summarization algorithm that will generate the summary from the video transcript. They will use NLP libraries like NLTK or spaCy for this.<br>
+                
+                <b>Student 3 - User Interface:</b> This student will develop a user-friendly web interface where users can enter the URL of the YouTube video they want to summarize. They will use HTML, CSS, and JavaScript for this.<br>
+                
+                <b>Student 4 - Backend Development and API Integration:</b> This student will be responsible for setting up the server, managing the requests and responses, and integrating the YouTube Data API. They could use a backend framework like Node.js or Django for this.</div>
+        </div>
+        <div class="item"><b>Use Cases</b>
+            <div class="info"><b>User Registration:</b> Users can register to the system by providing their email address and other optional information.<br>
+
+                <b>Video Summarization:</b> Once registered, the user can enter the URL of a YouTube video they want to summarize. The system will then extract the video transcript, generate a summary using NLP, and display the summary to the user.<br>
+                
+                <b>History:</b>  can view a history of the videos they’ve summarized in the past.<br>
+                
+                <b>User Dashboard:</b> Users can log in to their dashboard to see the status of their video summarizations and any alerts.<br>
+                
+                <b>Data Update:</b> Users can update their information in the system to be monitored.</div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.item').click(function() {
+                $(this).find('.info').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

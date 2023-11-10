@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Market Analysis</title>
+    <style>
+        
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .project {
+            background-color: #676567;
+            margin: 1%;
+            padding: 1%;
+            border-radius: 5px;
+        }
+        .item {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+            background-color: #d42121;
+            margin: 1.3%;
+            padding: 1.3%;
+            border-radius: 3px;
+        }
+        .item:hover {
+            background-color: #b0c4de;
+        }
+        .info {
+            display: none;
+            margin: auto;
+            padding: auto;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="project">
+        <h2>Job Market Analysis</h2>
+        <div class="item"><b>Objective or Description</b><br>
+            <div class="info"> The “Job Market Trend Analysis” project aims to provide insights into the job market by analyzing data from various job portals. The project involves several stages: data collection, data storage, data analysis, and result presentation. The data collection stage involves scraping job data or using APIs to gather data from job portals. The collected data is then stored in a database. The data analysis stage involves cleaning and analyzing the data to identify trends and patterns. The results of the analysis are then presented in a user-friendly web application.</div>
+        </div>
+        <div class="item"><b>Tools, Technologies and concepts</b><br>
+            <div class="info"><b>Web Scraping:</b> Use Python libraries like Beautiful Soup or Scrapy to scrape job data from various job portals. You’ll need to understand HTML and the DOM to effectively scrape data.<br>
+
+                <b>Database Management:</b> Store the scraped data in a database. You could use SQL (like MySQL or PostgreSQL) or NoSQL (like MongoDB) databases depending on your preference and the nature of your data.<br>
+                
+                <b>Data Analysis:</b> Use Python libraries like Pandas and NumPy for data cleaning and analysis. You’ll be dealing with concepts like dataframes, series, and various data manipulation techniques.<br>
+                
+                <b>Data Visualization:</b> Use libraries like Matplotlib, Seaborn, or Plotly to create visualizations of your analysis. You could create bar charts, pie charts, scatter plots, etc.<br>
+                
+                <b>Machine Learning:</b> If you want to take it a step further, you could use machine learning algorithms to predict future job market trends. Libraries like scikit-learn or TensorFlow will be useful here.<br>
+                
+                <b>Web Development:</b> To present your results, you could create a web application. You could use a Python web framework like Flask or Django. You’ll need to know HTML, CSS, and JavaScript for the front-end.<br>
+                
+                <b>APIs:</b> If the job portals have APIs, you could use them to get the job data instead of scraping. You’ll need to understand how to work with APIs, make HTTP requests, and handle JSON data.<br>
+                
+                <b>Version Control:</b> Use Git for version control. This will help you collaborate effectively with your team members.</div>
+        </div>
+        <div class="item"><b>Role of team members</b>
+            <div class="info"><b>Data Collection Specialist:</b> This student will be responsible for collecting data from various job portals. They will use web scraping techniques or APIs to gather job data.<br>
+
+                <b>Database Manager:</b> This student will be responsible for storing the collected data in a database. They will design the database schema and ensure the data is stored efficiently.<br>
+                
+                <b>Data Analyst:</b> This student will be responsible for analyzing the data. They will clean the data and use various data analysis techniques to identify trends and patterns in the job market.<br>
+                
+                <b>Web Developer:</b> This student will be responsible for developing the web application. They will design the front-end of the application and integrate it with the data analysis results.</div>
+        </div>
+        <div class="item"><b>Use Cases</b>
+            <div class="info"><b>Job Seekers:</b> Job seekers can use the web application to understand the current job market trends. They can identify which skills are in demand and which industries are hiring the most.<br>
+
+                <b>Career Counselors:</b> Career counselors can use the application to guide students and job seekers. They can provide advice based on the current job market trends.<br>
+                
+                <b>Companies</b> Companies can use the application to understand the job market. They can identify the skills that are in demand and adjust their hiring strategies accordingly.<br>
+                
+                <b>Educational Institutions:</b> Educational institutions can use the application to design their curriculum. They can identify the skills that are in demand and incorporate them into their courses.<br>
+                
+            <b>Government Agencies:</b> Government agencies can use the application to understand the job market. They can use the data to formulate policies related to employment and education.</div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.item').click(function() {
+                $(this).find('.info').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

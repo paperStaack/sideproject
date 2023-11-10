@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Guide</title>
+    <style>
+        
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .project {
+            background-color: #676567;
+            margin: 1%;
+            padding: 1%;
+            border-radius: 5px;
+        }
+        .item {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: aliceblue;
+            background-color: #d42121;
+            margin: 1.3%;
+            padding: 1.3%;
+            border-radius: 3px;
+        }
+        .item:hover {
+            background-color: #b0c4de;
+        }
+        .info {
+            display: none;
+            margin: auto;
+            padding: auto;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="project">
+        <h2>City Guide</h2>
+        <div class="item"><b>Objective or Description</b>
+            <div class="info">The project aims to develop an interactive city guide that provides users with information about various cities. The guide will include details about tourist attractions, restaurants, hotels, and other points of interest. Users can search for a city and get a comprehensive guide about what the city has to offer.</div>
+        </div>
+        <div class="item"><b>Tools, Technologies and concepts</b>
+            <div class="info"><b>APIs (Google Places API or OpenStreetMap API):</b> To collect data about various cities.<br>
+                <b>Backend Framework (Node.js or Django):</b> To develop the backend of the application.<br>
+                <b>Frontend Technologies (HTML, CSS, JavaScript):</b> To develop the user interface of the application.<br>
+                <b>Frontend Framework (React or Angular):</b> To develop a dynamic and interactive user interface.<br>
+                <b>Testing Framework (Jest or Mocha):</b> To test the application.<br>
+                <b>Git:</b> For version control and collaboration.</div>
+        </div>
+        <div class="item"><b>Role of team members</b>
+            <div class="info"><b>Student 1 - Data Collection and Processing:</b> This student will be responsible for collecting and processing data about various cities. They can use APIs like Google Places API or OpenStreetMap API for this.<br>
+
+                <b>Student 2 - Backend Development:</b> This student will develop the backend of the application, which will handle requests and responses, manage data, and integrate with the APIs. They can use a backend framework like Node.js or Django for this.<br>
+                
+                <b>Student 3 - Frontend Development:</b> This student will develop the user interface of the application. They will use HTML, CSS, and JavaScript for this. They can also use a frontend framework like React or Angular for this.<br>
+                
+                <b>Student 4 - Testing and Optimization:</b> This student will be responsible for testing the application to ensure it works correctly. They will also work on optimizing the application for performance and usability. They can use testing frameworks like Jest or Mocha for this.</div>
+        </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.item').click(function() {
+                $(this).find('.info').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
