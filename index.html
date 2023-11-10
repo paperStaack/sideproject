@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        background-image:url('abstract-digital-grid-black-background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        area:hover {
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script>
+    <script>
+    $(document).ready(function(e) {
+        $('img[usemap]').rwdImageMaps();
+    });
+    </script>
+</head>
+<body>
+    <img src="C:\Users\bhima\OneDrive\Desktop\greyglacier.png" alt="Workplace" usemap="#workmap">
+
+    <map name="workmap">
+      <area shape="circle" coords="451,161,27" alt="Coffee" href="project1.html">
+      <area shape="circle" coords="616,95,26" alt="Coffee" href="project2.html">
+      <area shape="circle" coords="771,109,25" alt="Coffee" href="project3.html">
+      <area shape="circle" coords="894,219,26" alt="Coffee" href="project4.html">
+      <area shape="circle" coords="919,373,25" alt="Coffee" href="project5.html">
+      <area shape="circle" coords="867,525,26" alt="Coffee" href="project6.html">
+      <area shape="circle" coords="718,609,27" alt="Coffee" href="project7.html">
+      <area shape="circle" coords="544,607,26" alt="Coffee" href="project8.html">
+      <area shape="circle" coords="401,505,26" alt="Coffee" href="project9.html">
+      <area shape="circle" coords="366,329,26" alt="Coffee" href="project10.html">
+      <area shape="circle" coords="689,173,26" alt="Coffee" href="project11.html">
+      <area shape="circle" coords="792,221,25" alt="Coffee" href="project12.html">
+      <area shape="circle" coords="848,327,25" alt="Coffee" href="project13.html">
+      <area shape="circle" coords="828,444,26" alt="Coffee" href="project14.html">
+      <area shape="circle" coords="742,521,26" alt="Coffee" href="project15.html">
+      <area shape="circle" coords="619,534,26" alt="Coffee" href="project16.html">
+      <area shape="circle" coords="508,500,26" alt="Coffee" href="project17.html">
+      <area shape="circle" coords="443,396,25" alt="Coffee" href="project18.html">
+      <area shape="circle" coords="473,274,26" alt="Coffee" href="project19.html">
+      <area shape="circle" coords="580,190,26" alt="Coffee" href="project20.html">
+    </map>
+</body>
+</html>
